@@ -1,6 +1,6 @@
 {
   "name": "amazing-toolkit",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A nice toolkit",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -22,7 +22,11 @@
     "type": "git",
     "url": "git+https://github.com/xerosanyam/amazing-toolkit.git"
   },
-  "keywords": ["toolkit", "hackathon", "office"],
+  "keywords": [
+    "toolkit",
+    "hackathon",
+    "office"
+  ],
   "author": "xerosanyam",
   "license": "ISC",
   "bugs": {
