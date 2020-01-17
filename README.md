@@ -2,11 +2,11 @@
 ##  Usage
 ```js
 // preferred on frontend
-- import SlackService from 'amazing-toolkit/dist/SlackService'`
+- import SlackService from 'amazing-toolkit/dist/SlackService'
 
 or
 
-- `import {SlackService} from 'amazing-toolkit'
+- import {SlackService} from 'amazing-toolkit'
 ```
 
 ## Available Services
