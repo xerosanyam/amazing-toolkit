@@ -1,21 +1,29 @@
 {
   "name": "amazing-toolkit",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "A nice toolkit",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
+    "prepare": "npm run build",
+    "prepublishOnly": "npm run lint",
+    "preversion": "npm run lint",
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "tsc",
     "format": "prettier --write \"src/**/*.ts\" \"src/**/*.js\"",
-    "lint": "tslint -p tsconfig.json"
+    "lint": "tslint -p tsconfig.json",
+    "version": "npm run format && git add -A src",
+    "postversion": "git push && git push --tags"
   },
-  "files": ["dist/**/*"],
+  "files": [
+    "dist/**/*"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/xerosanyam/amazing-toolkit.git"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": ["toolkit", "hackathon", "office"],
+  "author": "xerosanyam",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/xerosanyam/amazing-toolkit/issues"
