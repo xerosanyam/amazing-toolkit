@@ -1,0 +1,38 @@
+{
+  "name": "amazing-toolkit",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc",
+    "format": "prettier --write \"src/**/*.ts\" \"src/**/*.js\"",
+    "lint": "tslint -p tsconfig.json"
+  },
+  "files": ["dist/**/*"],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xerosanyam/amazing-toolkit.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/xerosanyam/amazing-toolkit/issues"
+  },
+  "homepage": "https://github.com/xerosanyam/amazing-toolkit#readme",
+  "devDependencies": {
+    "@types/config": "0.0.36",
+    "@types/nodemailer": "^6.4.0",
+    "prettier": "^1.19.1",
+    "tslint": "^5.20.1",
+    "tslint-config-prettier": "^1.18.0",
+    "typescript": "^3.7.5"
+  },
+  "dependencies": {
+    "amplitude": "^4.0.0",
+    "axios": "^0.19.1",
+    "firebase-admin": "^8.9.1",
+    "nodemailer": "^6.4.2"
+  }
+}
