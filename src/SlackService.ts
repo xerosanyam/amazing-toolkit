@@ -16,8 +16,9 @@ const postToSlack = ({ text }: { text: string }) => {
   }
   return axios(url, {
     data: data,
+    // required for sending msg by frontend
     headers: {
-      'Content-Type': 'application/json'
+      'Content-Type': 'application/x-www-form-urlencoded'
     },
     method: 'POST'
   })
