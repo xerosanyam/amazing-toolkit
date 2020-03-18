@@ -9,11 +9,13 @@ const init = ({
   databaseURL: string
   storageBucket: string
 }) => {
-  admin.initializeApp({
-    credential: admin.credential.cert(credential),
-    databaseURL,
-    storageBucket
-  })
+  if (!admin.apps.length) {
+    admin.initializeApp({
+      credential: admin.credential.cert(credential),
+      databaseURL,
+      storageBucket
+    })
+  }
 }
 
 const getUserByEmail = (email: string) => {
