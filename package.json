@@ -1,5 +1,5 @@
 {
-  "name": "amazing-toolkit",
+  "name": "@xerosanyam/amazing-toolkit",
   "version": "1.0.3",
   "description": "A nice toolkit",
   "main": "dist/index.js",
