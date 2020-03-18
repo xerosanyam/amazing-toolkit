@@ -6,7 +6,7 @@
   "types": "dist/index.d.ts",
   "scripts": {
     "prepare": "npm run build",
-    "prepublishOnly": "npm run lint",
+    "prepublishOnly": "git stash && npm version patch && git stash pop",
     "preversion": "npm run lint",
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "tsc",
