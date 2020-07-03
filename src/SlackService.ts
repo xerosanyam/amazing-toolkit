@@ -10,13 +10,7 @@ const init = (webhookURL: string) => {
  * @param {object} data
  * @example postToSlack({channel:'@user',text:'hello'})
  */
-const postToSlack = ({
-  text,
-  channel
-}: {
-  text: string,
-  channel: string
-}) => {
+const postToSlack = ({ text, channel }: { text: string; channel: string }) => {
   const data = {
     text: text,
     channel: channel
