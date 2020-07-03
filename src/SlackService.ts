@@ -10,9 +10,16 @@ const init = (webhookURL: string) => {
  * @param {object} data
  * @example postToSlack({channel:'@user',text:'hello'})
  */
-const postToSlack = ({ text }: { text: string }) => {
+const postToSlack = ({
+  text,
+  channel
+}: {
+  text: string,
+  channel: string
+}) => {
   const data = {
-    text: text
+    text: text,
+    channel: channel
   }
   return axios(url, {
     data: data,
