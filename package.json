@@ -47,7 +47,7 @@
   "dependencies": {
     "amplitude": "^4.0.0",
     "axios": "^0.19.1",
-    "firebase-admin": "^8.9.1",
+    "firebase-admin": "^11.4.1",
     "nodemailer": "^6.4.2"
   }
 }
